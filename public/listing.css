@@ -1,0 +1,49 @@
+User
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.listings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px; /* Equal padding on the left and right sides of the listings grid */
+}
+
+.listing {
+    width: calc(33.33% - 20px); /* Adjust width to accommodate three listings per row */
+    margin-bottom: 40px; /* Increase margin between rows */
+    padding: 0 10px; /* Equal padding on the left and right sides of each listing */
+    box-sizing: border-box;
+}
+
+
+.listing img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+}
+
+.listing h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000; /* Set title color to black */
+    text-decoration: none !important; /* Remove underline */
+   
+}
+
+.listing p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+    font-weight: bold;
+    
+}
+.listing a {
+    text-decoration: none;
+    color: inherit;
+}
