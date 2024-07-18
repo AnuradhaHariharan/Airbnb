@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+form {
+    width: 100%; /* Expand the form to cover the entire page */
+    max-width: 800px; /* Limit the maximum width of the form */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+textarea {
+    width: 100%; /* Make input fields fill the entire width */
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Lighter border color */
+    border-radius: 0; /* Remove border radius */
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #4caf50; /* Focus border color */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #ff5555; /* Red submit button */
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 0; /* Remove border radius */
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker hover color */
+} make the form the whole document 

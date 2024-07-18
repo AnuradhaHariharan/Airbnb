@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb | Home</title>
     <link rel="stylesheet" href="navBar.css">
-    <link rel="stylesheet" href="listing.css">
-    <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="listing.css">
+<link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <%- include('../layout/navbar.ejs') %> <br>
@@ -15,13 +15,12 @@
         <div class="listings-grid">
             <% allListing.forEach(listing => { %>
                 <div class="listing">
-                    <a href="/listings/<%= listing._id %>"> <!-- Link to redirect to individual listing -->
+                    <a href="/individualListing/<%=listing._id %>" >
                         <img src="<%= listing.image %>" alt="<%= listing.title %>">
                         <h2><%= listing.title %></h2>
                     
                     </a>
                     <p><%= '₹' + listing.price %> /night</p>
-                    <br>
                 </div>
             <% }) %>
         </div>

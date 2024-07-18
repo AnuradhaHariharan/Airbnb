@@ -12,17 +12,21 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set container min-height to full viewport height */
 }
 
 .listing-details {
     text-align: center;
-    margin-top: 50px;
+    max-width: 600px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
 }
 
 .listing-details img {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
+    max-width: 100%; /* Set the maximum width of the image to the container width */
+    height: auto; /* Let the height adjust automatically */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

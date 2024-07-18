@@ -1,4 +1,6 @@
-{
+{ "engines": {
+"node": "21.3.0"
+},
   "name": "airbnbx",
   "version": "1.0.0",
   "description": "",
